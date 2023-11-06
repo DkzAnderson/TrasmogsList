@@ -30,7 +30,7 @@ function SetProgres(){
     let actual = ver();
     let progress = (actual * 100 / total).toFixed(0)
     
-    progressBar.txt.innerHTML = `${progress} %`
+    progressBar.txt.innerHTML = `Completado: ${progress}%`
     progressBar.background.style.width = `${progress}%`
 
     if(progress <= 20) progressBar.background.style.background = '#c30808'
